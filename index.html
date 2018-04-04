@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>
+			HTML elements
+		</title>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<link rel="stylesheet" href="css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/index.css">
+	</head>
+	<body>
+		<nav class="navbar navbar-inverse" style="margin-bottom: 0px;">
+			<div class="container-fluid">
+				<div class="navbar-header">
+					<a class="navbar-brand" href="#">HTML elements</a>
+				</div>
+				<ul class="nav navbar-nav">
+					<li><a class="nav-link" href="#">Home</a></li>
+					<li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown">Tags<span class="caret"></span></a>
+					<ul class="dropdown-menu">
+						<li><a class="nav-link" href="#texts">Texts</a></li>
+						<li><a class="nav-link" href="#headers">Headers</a></li>
+						<li><a class="nav-link" href="#fonts">Fonts</a></li>
+						<li><a class="nav-link" href="#textsStyles">Text's styles</a></li>
+						<li><a class="nav-link" href="#textsAlignes">Text's aligns</a></li>
+						<li><a class="nav-link" href="#preformatedTexts">Preformated texts</a></li>
+						<li><a class="nav-link" href="#textsSizes">Text's sizes</a></li>
+						<li><a class="nav-link" href="#textsColors">Text's colors</a></li>
+						<li><a class="nav-link" href="#images">Images</a></li>
+						<li><a class="nav-link" href="#lists">Lists</a></li>
+						<li><a class="nav-link" href="#definitions">Definitions</a></li>
+						<li><a class="nav-link" href="#forms">Forms</a></li>
+					</ul>
+				  </ul>
+			</div>
+		</nav>
+		<div class="container-fluid logo">
+			<div class="page-header text-center jumbotron">
+				<h1 style="margin-top: 0px;">HTML elements</h1>
+					<img src="res/html.png" alt="HTML" class="img-rounded" width="100%"/>
+					<h4 align="left">In this page you can find some useful tags and some tricks and tips in HTML. This page contains a tag example and it's description. This page is using Bootstrap framework to style this page and make it more beautiful.</h4>
+			</div>
+		</div>
+		<div class="container">			
+			<div class="main-page">
+				<div class="tagDefinition">
+					<a name="texts"></a>
+					<h3>Texts <span class="badge">2</span></h3>
+					<hr/>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Simple text</th>
+								<th>Paragraph</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>This is a simple text.</td>
+							<td><p>This is a paragraph.</p></td>
+						</tr>
+					</table>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Texts</div>
+						<div class="panel-body">
+							<p>To print a simple text without any tags, just type it in HTML. For example:</p>
+							<code>This is a simple example</code>
+							<p>And if you want to use a paragraph, just type this text between two <code>p</code> tags. For example:</p>
+							<code>&lt;p&gt;This is a paragraph.&lt;/p&gt;</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="headers"></a>
+					<h3>Headers <span class="badge">6</span></h3>
+					<hr/>
+					<div class="list-group">
+						<a class="list-group-item">
+							<h1>Header 1</h1>
+						</a>
+						<a class="list-group-item">
+							<h2>Header 2</h2>
+						</a>
+						<a class="list-group-item">
+							<h3>Header 3</h3>
+						</a>
+						<a class="list-group-item">
+							<h4>Header 4</h4>
+						</a>
+						<a class="list-group-item">
+							<h5>Header 5</h5>
+						</a>
+						<a class="list-group-item">
+							<h6>Header 6</h6>
+						</a>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Headers</div>
+						<div class="panel-body">
+							<p>To use a header, just print a text between two <code>h1</code> or <code>h2</code> or <code>h3</code> or <code>h4</code> or <code>h5</code> or <code>h6</code> tags. For example:</p>
+							<code>&lt;h3&gt;This is a header.&lt;/h2&gt;</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="fonts"></a>
+					<h3>Fonts <span class="badge">3</span></h3>
+					<hr/>
+					<div class="list-group">
+						<a class="list-group-item">
+							<font face="Times New Roman">Times New Roman</font>
+						</a>
+						<a class="list-group-item">
+							<font face="Calibri">Calibri</font>
+						</a>
+						<a class="list-group-item">
+							<font face="Arial Black">Arial Black</font>
+						</a>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Fonts</div>
+						<div class="panel-body">
+							<p>To use fonts, just print a text between two <code>font</code> tags with a "face" attribute, which contains the font's name. For example:</p>
+							<code>&lt;font face="Times New Roman"&gt;This is a Times New Roman font.&lt;/font&gt;</code>
+						</div>
+					</div>				
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="textsStyles"></a>
+					<h3>Text's styles<span class="badge">4</span></h3>
+					<hr/>
+					<table class="table table-striped table-hover">
+						<thead>
+							<tr>
+								<th>Bold</th>
+								<th>Italic</th>
+								<th>Deleted</th>
+								<th>Underlined</th>
+							</tr>
+						</thead>
+						<tr>
+							<td><b>This's bold text.</b></td>
+							<td><i>This's italic text.</i></td>
+							<td><del>This's deleted text.</del></td>
+							<td><u>This's underlined text.</u></td>
+						<tr>
+					</table>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Text's styles</div>
+						<div class="panel-body">
+							<p>To contol a style of a text, just print a text between two <code>b</code>(bold text) or <code>i</code>(italic text) or <code>del</code>(deleted text) or <code>u</code>(underlined text) tags. For example:</p>
+							<code>
+								&lt;b&gt;This's bold text.&lt;/b&gt;
+								&lt;i&gt;This's italic text.&lt;/i&gt;
+								&lt;del&gt;This's deleted text.&lt;/del&gt;
+								&lt;u&gt;This's underlined text.&lt;/u&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="textsAlignes"></a>
+					<h3>Text's alignes <span class="badge">4</span></h3>
+					<hr/>
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>Left</th>
+								<th>Right</th>
+								<th>Center</th>
+								<th>Justify</th>
+							</tr>
+						</thead>
+						<tr>
+							<td><p align="left">Left align</p></td>
+							<td><p align="right">Right align</p></td>
+							<td><p align="center">Center align</p></td>
+							<td><p align="justify">Justify align</p></td>
+						</tr>
+					</table>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Text's alignes</div>
+						<div class="panel-body">
+							<p>To align a text, just print a text between two <code>p</code> or <code>span</code> tags with an attribute "align", which contains an aligned type (center, right, left, justify). For example:</p>
+							<code>
+								&lt;p align="left"&gt;This's aligned text.&lt;/p&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="preformatedTexts"></a>
+					<h3>Preformated texts <span class="badge">1</span></h3>
+					<hr/>
+					<pre>This text is preformated!</pre>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Preformated texts</div>
+						<div class="panel-body">
+							<p>To use a preformated text (with spaces, new lines,...), just print a text between two <code>pre</code> tags. For example:</p>
+							<code>
+								&lt;pre&gt;This's preformated text.&lt;/pre&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="textsSizes"></a>
+					<h3>Text's sizes <span class="badge">3</span></h3>
+					<hr/>
+					<div class="list-group">
+						<a class="list-group-item">
+							<font size="10">This is a big text.</font>
+						</a>
+						<a class="list-group-item">
+							<font size="3">This is a normal text.</font>
+						</a>
+						<a class="list-group-item">
+							<font size="1">This is a small text.</font>
+						</a>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Text's sizes</div>
+						<div class="panel-body">
+							<p>To control a text's sizes, just print a text between two <code>font</code> tags with an attribute "size", which contains a text's size. For example:</p>
+							<code>
+								&lt;font size="10"&gt;This's a big text.&lt;/font&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="textsColors"></a>
+					<h3>Text's colors <span class="badge">5</span></h3>
+					<hr/>
+					<div class="list-group">
+						<a class="list-group-item">
+							<font color="#ff0000">Red</font>
+						</a>
+						<a class="list-group-item">
+							<font color="#00ff00">Green</font>
+						</a>
+						<a class="list-group-item">
+							<font color="#0000ff">Blue</font>
+						</a>
+						<a class="list-group-item">
+							<font color="#000000">Black</font>
+						</a>
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Text's colors</div>
+						<div class="panel-body">	
+						  <p>To change a text's color, just type the text between two <code>font</code> tags with an attribute "color", which contains a hexademical RGB color or color's name. For example:</p>
+						  <code>
+							&lt;font color="#ff0000"&gt;Red&lt;/font&gt;
+							&lt;font color="red"&gt;Red&lt;/font&gt;
+						  </code>
+					  </div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="images"></a>
+					<h3>Images <span class="badge">3</span></h3>
+					<hr/>
+					<div class="row">
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="res/image.png" width="100" alt="Image"/>
+								<div class="caption">
+									<p>Width is equal 100.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="res/image.png" height="100" alt="Image"/>
+								<div class="caption">
+									<p>Height is equal 100.</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-4">
+							<div class="thumbnail">
+								<img src="res/image.png" border="100" alt="Image"/>
+								<div class="caption">
+									<p>Border is equal 100.</p>
+								</div>
+							</div>
+						</div>				
+					</div>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Images</div>
+						<div class="panel-body">
+							<p>To use images on the page, use <code>img</code> tag with a "src" attribute, which contains a path to the image. For example:</p>
+							<code>
+								&lt;img src="res/image.png"/&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="lists"></a>
+					<h3>Lists <span class="badge">2</span></h3>
+					<hr/>
+					<table class="table table-bordered table-hover">
+						<thead>
+							<tr>
+								<th>
+									<p>Unordered list</p>
+								</th>
+								<th>
+									<p>Ordered list</p>
+								</th>
+							</tr>
+						</thead>
+						<tr>
+							<td>
+								<ul type="square">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ul>
+							</td>
+							<td>
+								<ol type="I">
+									<li>1</li>
+									<li>2</li>
+									<li>3</li>
+									<li>4</li>
+									<li>5</li>
+								</ol>
+							</td>
+					</table>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Lists</div>
+						<div class="panel-body">
+							<p>To use lists on the page, use <code>ul</code>(unordered list) or <code>ol</code>(ordered list) tags with a <code>li</code>(list item) tag in it's body. For example:</p>
+							<code>
+								&lt;ul&gt;&lt;li&gt;1&lt;/li&gt;&lt;li&gt;2&lt;/li&gt;&lt;li&gt;3&lt;/li&gt;&lt;/ul&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="definitions"></a>
+					<h3>Definitions <span class="badge">3</span></h3>
+					<hr/>
+					<dl>
+						<dt>Definition term 1</dt>
+						<dd/><p>- Definition descriptions 1</p></dd>
+						
+						<dt>Definition term 2</dt>
+						<dd><p>- Definition descriptions 2</p></dd>
+						
+						<dt>Definition term 3</dt>
+						<dd><p>-Definition descriptions 3</p></dd>
+					</dl>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Definitions</div>
+						<div class="panel-body">
+							<p>To use a definitions on the page use <code>dl</code>(definition list) with a <code>dt</code>(definition term) and <code>dd</code>(definition description) tags in it's body. For example:</p>
+							<code>
+								&lt;dl&gt;
+									&lt;dt&gt;1 term&lt;/dt&gt;
+									&lt;dd&gt;1 description&lt;/dd&gt;
+									
+									&lt;dt&gt;2 term&lt;/dt&gt;
+									&lt;dd&gt;2 description&lt;/dd&gt;
+								&lt;/dl&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="forms"></a>
+					<h3>Forms <span class="badge">1</span></h3>
+					<hr/>
+					<form class="form-horizontal" method="POST" action="">
+						<div class="form-group">
+							<label for="login" class="control-label col-sm-2">Last name:</label>
+							<div class="col-sm-10">
+								<input id="login" type="text" class="form-control" name="lastName" placeholder="Enter last name"/>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="report" class="control-label col-sm-2">Report:</label>
+							<div class="col-sm-10">
+								<textarea id="report" name="report" class="form-control" rows="5" placeholder="Enter your report"></textarea>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+									<label><input type="radio" name="radio" value="radio-1"/>Radio 1</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">				
+									<label><input type="radio" name="radio" value="radio-2"/>Radio 2</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">				
+									<label><input type="radio" name="radio" value="radio-3"/>Radio 3</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">
+									<label><input type="checkbox" name="checkbox" value="checkbox-1"/>Checkbox 1</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<div class="col-sm-offset-2 col-sm-10">
+								<div class="checkbox">				
+									<label><input type="checkbox" name="checkbox" value="checkbox-2"/>Checkbox 2</label>
+								</div>
+							</div>
+						</div>
+						<div class="form-group">
+							<label for="sel" class="control-label col-sm-2">Select one</label>
+							<div class="col-sm-10">
+								<select id="sel" name="select-value" class="form-control">
+									<option value="1">1</option>
+									<option value="2">2</option>
+									<option value="3">3</option>
+								</select>
+							</div>
+						</div>
+						<div class="form-group">
+							<input type="submit" class="btn btn-primary btn-block form-control" value="Submit form"/>
+							<input type="reset" class="btn btn-danger btn-block form-control" value="Reset form"/>
+						</div>
+					</form>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Forms</div>
+						<div class="panel-body">
+							<p>To use a forms on the page use a <code>form</code> tag with a <code>input</code> tag in it's body. For example:</p>
+							<code>
+								&lt;form&gt;
+									Your name: &lt;input type="text"/&gt;
+								&lt;/form&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+				
+				<div class="tagDefinition">
+					<a name="links"></a>
+					<h3>Links <span class="badge">1</span></h3>
+					<hr/>
+					<a href="#" class="alert-link">Go to begin of this page.</a>
+					<div class="panel panel-primary">
+						<div class="panel-heading">Links</div>
+						<div class="panel-body">
+							<p>To use a link on the page use a <code>a</code> tag with an "src" attribute. For example:</p>
+							<code>
+								&lt;a src="#"&gt;Go to begin of this page.&lt;/a&gt;
+							</code>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<footer class="footer">
+			<div class="container-fluid text-center">
+				<p class="text-muted">&copy; 2018-2018 by nucl34rByte. All rights reserved.</p>
+			</div>
+		</footer>
+	</body>
+</html>
